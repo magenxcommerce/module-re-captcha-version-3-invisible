@@ -1,0 +1,29 @@
+{
+    "name": "magenxcommerce/module-re-captcha-version-3-invisible",
+    "description": "Google reCAPTCHA integration for Magento2",
+    "version": "1.0.0",
+    "require": {
+        "php": "~7.3.0||~7.4.0",
+        "magenxcommerce/framework": "*",
+        "magenxcommerce/module-store": "*",
+        "magenxcommerce/module-re-captcha-ui": "*",
+        "magenxcommerce/module-re-captcha-validation-api": "*"
+    },
+    "suggest": {
+        "magenxcommerce/module-config": "*",
+        "magenxcommerce/module-re-captcha-admin-ui": "1.0.*"
+    },
+    "type": "magento2-module",
+    "license": "OSL-3.0",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Magento\\ReCaptchaVersion3Invisible\\": ""
+        }
+    },
+    "replace": {
+        "magento/module-re-captcha-version-3-invisible": "*"
+    }
+}
